@@ -1,0 +1,52 @@
+<center>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password Protected Page</title>
+</head>
+<body>
+
+<h1>Locked</h1>
+<br>
+<br>
+
+<form id="passwordForm" onsubmit="checkPassword(event)">
+  <label for="password">Password:</label>
+  <br>
+  <input class="input" type="password" id="password" name="password" required>
+  <br><br>
+  <button type="submit">Submit</button>
+</form>
+
+<script>
+function checkPassword(event) {
+  event.preventDefault(); // Prevent form submission
+  
+  // Get the value of the password input
+  var passwordInput = document.getElementById("password").value;
+  
+  // Check if the password is correct
+  if (passwordInput === "XCXFSHQ") {
+    // Redirect user to index.html if password is correct
+    window.location.href = "own design.html";
+  } else {
+    // Notify user of incorrect password
+    alert("Incorrect password. Please try again.");
+  }
+}
+</script>
+
+</body>
+</html>
+<style>
+    .input{
+        height: 30px;
+        width: 200px;
+        color: green;
+    }
+</style>
+</center>
+<br><br><br>
+<a href="wa.me/9118336296">Buy password 1,500 vis WhatsApp</a>
